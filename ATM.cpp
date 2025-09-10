@@ -6,13 +6,13 @@ int main(){
     cout << "Your Current Balance is " << balance << endl; 
     cout << "Enter Option 1 = Deposit or 0 = Withdraw: " << endl;
     cin >> option;
-    if(option == 1){
+    if(option == 1){ //Deposit Amount
         cout << "Enter Amount to Deposit" << endl; 
         cin >> depom;
         balance = balance + depom;
         cout << "Your New Balance: " << balance << endl;
     }
-    if(option == 0){
+    if(option == 0){ //Withdraw Amount
         cout << "Enter Amount to Withdraw" << endl;
         cout << "Current Balance is: " << balance << endl;
         cin >> witam;
@@ -20,11 +20,11 @@ int main(){
             balance = balance - witam;
             cout << "Your New Balance: " << balance << endl;
         }
-        else{
+        else{ 
             cout << "In-Sufficient Balance" << endl;
         }
     }
-    else{
+    else{ //Invalid Number
         cout << "Enter Valid Number 1-0" << endl;
     }
     }
